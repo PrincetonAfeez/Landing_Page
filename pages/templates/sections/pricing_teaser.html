@@ -1,0 +1,36 @@
+<section id="pricing" class="bg-white py-16 md:py-20">
+    <div class="mx-auto max-w-6xl px-5 lg:px-8">
+        <div class="grid gap-10 md:grid-cols-[0.8fr_1.2fr] md:items-start">
+            <div>
+                <p class="text-sm font-semibold uppercase text-brand-primary">Access</p>
+                <h2 class="mt-3 text-3xl font-bold text-brand-ink sm:text-4xl">Start with the people who care about trust.</h2>
+                <p class="mt-4 text-base leading-7 text-brand-muted">
+                    Worker access stays open during beta. Employer pilots are intentionally limited while the network learns with early teams.
+                </p>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+                {% for tier in pricing_tiers %}
+                    <article class="rounded-lg border border-brand-primary/15 bg-brand-paper p-6 shadow-sm">
+                        <h3 class="text-xl font-bold text-brand-ink">{{ tier.name }}</h3>
+                        <p class="mt-3 text-2xl font-bold text-brand-primary">{{ tier.price }}</p>
+                        <p class="mt-3 text-sm leading-6 text-brand-muted">{{ tier.audience }}</p>
+                        <ul class="mt-5 grid gap-3 text-sm text-brand-ink">
+                            {% for highlight in tier.highlights %}
+                                <li class="flex gap-3">
+                                    <i data-lucide="check" class="mt-0.5 h-4 w-4 shrink-0 text-brand-primary"></i>
+                                    <span>{{ highlight }}</span>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                        <a href="#" class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-brand-primary hover:text-brand-primaryDark">
+                            See full pricing
+                            <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+                        </a>
+                    </article>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+

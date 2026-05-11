@@ -1,0 +1,18 @@
+<section id="features" class="bg-brand-paper py-16 md:py-20">
+    <div class="mx-auto max-w-6xl px-5 lg:px-8">
+        <div class="max-w-2xl">
+            <p class="text-sm font-semibold uppercase text-brand-primary">Core network</p>
+            <h2 class="mt-3 text-3xl font-bold text-brand-ink sm:text-4xl">The missing context before the first conversation.</h2>
+            <p class="mt-4 text-base leading-7 text-brand-muted">
+                Above Board turns trusted peer knowledge into cleaner hiring signals for hospitality workers and employers.
+            </p>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {% for feature in features %}
+                {% include "components/feature_card.html" with feature=feature %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
