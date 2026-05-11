@@ -1,0 +1,2 @@
+# Root convenience file; split sets live under requirements/.
+-r requirements/base.txt
