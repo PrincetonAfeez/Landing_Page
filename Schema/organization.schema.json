@@ -1,0 +1,14 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://example.com/#organization",
+  "name": "Your Brand Name",
+  "url": "https://example.com/",
+  "logo": "https://example.com/assets/logo.png",
+  "email": "contact@example.com",
+  "sameAs": [
+    "https://www.facebook.com/your-page",
+    "https://www.instagram.com/your-profile",
+    "https://www.linkedin.com/company/your-company"
+  ]
+}

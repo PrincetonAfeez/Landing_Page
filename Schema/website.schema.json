@@ -1,0 +1,15 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://example.com/#website",
+  "name": "Your Brand Name",
+  "url": "https://example.com/",
+  "publisher": {
+    "@id": "https://example.com/#organization"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://example.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}

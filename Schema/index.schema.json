@@ -1,0 +1,74 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://example.com/#organization",
+      "name": "Your Brand Name",
+      "url": "https://example.com/",
+      "logo": "https://example.com/assets/logo.png",
+      "email": "contact@example.com",
+      "sameAs": [
+        "https://www.facebook.com/your-page",
+        "https://www.instagram.com/your-profile",
+        "https://www.linkedin.com/company/your-company"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://example.com/#website",
+      "name": "Your Brand Name",
+      "url": "https://example.com/",
+      "publisher": {
+        "@id": "https://example.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://example.com/#webpage",
+      "url": "https://example.com/",
+      "name": "Your landing page title",
+      "description": "A short description of your landing page.",
+      "isPartOf": {
+        "@id": "https://example.com/#website"
+      },
+      "about": {
+        "@id": "https://example.com/#organization"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://example.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does your product or service do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Briefly explain your main offer here."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can customers contact you?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Customers can contact us by email at contact@example.com."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://example.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://example.com/"
+        }
+      ]
+    }
+  ]
+}
