@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "landing-page"
+version = "0.1.0"
+description = "Academic marketing landing page (Django) for Above Board."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "Django>=5.2,<6.0",
+    "django-csp>=4.0,<5.0",
+    "django-environ>=0.11,<1.0",
+    "python-json-logger>=2.0,<4.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["core*", "pages*"]
+
+[tool.setuptools.package-data]
+pages = [
+    "templates/**",
+    "static/**",
+]
