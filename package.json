@@ -1,0 +1,10 @@
+{
+  "name": "landing-page",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./frontend/src/site.css -o ./pages/static/pages/css/site.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
