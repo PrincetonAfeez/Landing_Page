@@ -1,0 +1,12 @@
+{% extends "layouts/marketing.html" %}
+
+{% block title %}{{ SITE_NAME }} | {{ TAGLINE }}{% endblock %}
+{% block meta_description %}Above Board helps hospitality workers and employers hire through verified reputation, curated roles, and trusted peer context.{% endblock %}
+
+{% block page_content %}
+    {% include "sections/hero.html" %}
+    {% include "sections/features.html" %}
+    {% include "sections/pricing_teaser.html" %}
+    {% include "sections/contact.html" %}
+{% endblock %}
+
